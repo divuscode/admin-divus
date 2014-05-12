@@ -38,6 +38,8 @@ Morris.Area({
 	{ d: '2012-10-30', visits: 1529 },
 	{ d: '2012-10-31', visits: 1892 },
   ],
+  lineColors: ['#000'],
+  pointFillColors: ['#00ff00'],
   // The name of the data record attribute that contains x-visitss.
   xkey: 'd',
   // A list of names of data record attributes that contain y-visitss.

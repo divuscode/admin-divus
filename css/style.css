@@ -1,0 +1,80 @@
+/*header*/
+
+.breadcrumbs-nav {
+	background-color: #ccc;
+	height: 71px;
+	line-height: 71px;
+}
+.breadcrumbs {
+	padding: 0;
+	margin: 0;
+}
+.breadcrumbs li {
+	display: inline-block;
+}
+.breadcrumbs > li + li:before {
+	content: "/\00a0";
+	padding: 0 5px;
+	color: #000;
+}
+.breadcrumbs li a {
+	color: #000;
+}
+
+/*pages*/
+
+.pages-container ul {
+	padding: 0;
+	margin: 0;
+}
+
+.pages-sortable {
+	list-style-type: none;
+	background-color: #ccc;
+	border: 1px solid black;
+	margin: 1px 0;
+	cursor: move;
+
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-ms-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+/*.pages-sortable.ui-sortable-helper {
+	background-color: #323a45;
+
+	-webkit-transition: background-color 0.4s;
+	-moz-transition: background-color 0.4s;
+	-ms-transition: background-color 0.4s;
+	-o-transition: background-color 0.4s;
+	transition: background-color 0.4s;
+}*/
+
+.pages-sortable a {
+	color: #fff;
+	line-height: 40px;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.pages-sortable ul {
+	margin-left: 20px;
+	overflow: hidden;
+}
+
+.pages-sortable .pages-edit-icon {
+	float: right;
+	margin-right: 10px;
+	line-height: 40px;
+	text-align: right;
+	width: 50px;
+	z-index: 10;
+	cursor: default;
+}
+.pages-sortable .pages-edit-icon span {
+	position: relative;
+	cursor: pointer;
+	color: #fff;
+}
