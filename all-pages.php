@@ -43,88 +43,57 @@
             <div class="container">   
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="content-page-header">
-                            <h2><i class="fa fa-home"></i>Pages</h2>
-                            <div class="pages-edit-icon">
-                                <span class="confirm-icon"><i class="fa fa-check"></i></span>
-                                <span class="add-icon"><i class="fa fa-plus"></i></span>
-                            </div>
-                        </div>
+                        <h2><i class="fa fa-home"></i> Pages</h2>
                     </div>
                 </div><!-- /.row -->
-                <div class="row">
-                    <div class="col-lg-12">                  
-                        <div class="pages-container">
-                            <ul id="sortable">
-                                <li class="pages-sortable">
-                                    <a href="">Home</a>
-                                    <span class="pages-edit-icon">     
-                                        <span class="confirm-icon" data-toggle="tooltip" data-placement="top" title="Save page order">
-                                            <i class="fa fa-check"></i>
-                                        </span>
-                                        <span class="add-icon" data-toggle="tooltip" data-placement="top" title="Add new page">
-                                            <i class="fa fa-plus"></i>
-                                        </span>
-                                    </span>
-                                </li>
-                                <li class="pages-sortable">
-                                    <a href="">About us</a>
-                                    <span class="pages-edit-icon">     
-                                        <span class="confirm-icon" data-toggle="tooltip" data-placement="top" title="Save page order">
-                                            <i class="fa fa-check"></i>
-                                        </span>
-                                        <span class="add-icon" data-toggle="tooltip" data-placement="top" title="Add new page">
-                                            <i class="fa fa-plus"></i>
-                                        </span>
-                                    </span>
-                                </li>
-                                <li class="pages-sortable">
-                                    <a href="">Gallery</a>
-                                    <span class="pages-edit-icon">     
-                                        <span class="confirm-icon" data-toggle="tooltip" data-placement="top" title="Save page order">
-                                            <i class="fa fa-check"></i>
-                                        </span>
-                                        <span class="add-icon" data-toggle="tooltip" data-placement="top" title="Add new page">
-                                            <i class="fa fa-plus"></i>
-                                        </span>
-                                    </span>
-                                    <ul id="sortable">
-                                        <li class="pages-sortable pages-sortable-submenu">
-                                            <a href="">Single</a>
-                                            <span class="pages-edit-icon">     
-                                                <span class="confirm-icon" data-toggle="tooltip" data-placement="top" title="Save page order">
-                                                    <i class="fa fa-check"></i>
-                                                </span>
-                                                <span class="add-icon" data-toggle="tooltip" data-placement="top" title="Add new page">
-                                                    <i class="fa fa-plus"></i>
-                                                </span>
-                                            </span>
-                                        </li>
-                                        <li class="pages-sortable pages-sortable-submenu">
-                                            <a href="">Multi</a>
-                                            <span class="pages-edit-icon">     
-                                                <span class="confirm-icon" data-toggle="tooltip" data-placement="top" title="Save page order">
-                                                    <i class="fa fa-check"></i>
-                                                </span>
-                                                <span class="add-icon" data-toggle="tooltip" data-placement="top" title="Add new page">
-                                                    <i class="fa fa-plus"></i>
-                                                </span>
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="pages-sortable">
-                                    <a href="">Contact</a>
-                                    <span class="pages-edit-icon">     
-                                        <span class="confirm-icon" data-toggle="tooltip" data-placement="top" title="Save page order">
-                                            <i class="fa fa-check"></i>
-                                        </span>
-                                        <span class="add-icon" data-toggle="tooltip" data-placement="top" title="Add new page">
-                                            <i class="fa fa-plus"></i>
-                                        </span>
-                                    </span>
-                                </li>
+                <div class="pages-container">
+                    <div class="row">
+                        <?php include('primary-menu.php'); ?>
+
+                        <?php include('secondary-menu.php'); ?>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <ul class="nav nav-tabs-admin-divus-dark nav-tabs">
+                                <li class="active"><a href="#all" data-toggle="tab">All pages</a></li>
+                                <li><a href="#static" data-toggle="tab">Static</a></li>
+                                <li><a href="#dynamic" data-toggle="tab">Dynamic</a></li>
                             </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane tab-pane-admin-divus-dark active" id="all">
+                                    <?php include('select-all-pages.php'); ?>
+                                </div>
+
+                                <div class="tab-pane tab-pane-admin-divus-dark" id="static">
+                                    <?php include('select-static-pages.php'); ?> 
+                                </div>
+
+                                <div class="tab-pane tab-pane-admin-divus-dark" id="dynamic">
+                                    <?php include('select-dynamic-pages.php'); ?> 
+                                </div>
+                                <div class="button-for-add-pages">
+                                    <a href="" class="btn btn-block btn-admin-divus-dark add-page-to-primary-menu">
+                                        add page to primary menu
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <a href="" class="btn btn-block btn-admin-divus-dark add-page-to-secondary-menu">
+                                        add page to secondary menu
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="panel panel-divus-dark">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Area Line Graph Example with Tooltips</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="morris-chart-area"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
