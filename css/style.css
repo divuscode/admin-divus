@@ -23,6 +23,29 @@
 
 /*pages*/
 
+
+.menu-title h4 {
+	float: left;
+}
+
+.menu-title {
+	overflow: hidden;
+}
+
+.menu-title .pages-edit-icon {
+	float: left;
+	line-height: 40px;
+	margin-left: 10px;
+}
+
+.menu-title .pages-edit-icon span {
+	margin-left: 5px;
+	cursor: pointer;
+}
+.menu-title .pages-edit-icon span i {
+	font-size: 18px;
+}
+
 .pages-container ul {
 	padding: 0;
 	margin: 0;
@@ -30,11 +53,20 @@
 
 .pages-sortable {
 	list-style-type: none;
+	
+}
+
+.pages-sortable > a {
+	display: block;
+	color: #fff;
+	line-height: 30px;
+	font-size: 20px;
+	padding: 5px;
 	background-color: #ccc;
 	border: 1px solid black;
 	margin: 1px 0;
 	cursor: move;
-
+	text-decoration: none;
 	-webkit-transition: background-color 0.5s;
 	-moz-transition: background-color 0.5s;
 	-ms-transition: background-color 0.5s;
@@ -42,29 +74,13 @@
 	transition: background-color 0.5s;
 }
 
-/*.pages-sortable.ui-sortable-helper {
-	background-color: #323a45;
-
-	-webkit-transition: background-color 0.4s;
-	-moz-transition: background-color 0.4s;
-	-ms-transition: background-color 0.4s;
-	-o-transition: background-color 0.4s;
-	transition: background-color 0.4s;
-}*/
-
-.pages-sortable a {
-	color: #fff;
-	line-height: 40px;
-	font-size: 20px;
-	padding: 5px;
-}
-
 .pages-sortable ul {
 	margin-left: 20px;
-	overflow: hidden;
 }
 
 .pages-sortable .pages-edit-icon {
+	position: relative;
+	top: -40px;
 	float: right;
 	margin-right: 10px;
 	line-height: 40px;
@@ -73,8 +89,115 @@
 	z-index: 10;
 	cursor: default;
 }
-.pages-sortable .pages-edit-icon span {
+.pages-sortable .pages-edit-icon a {
 	position: relative;
-	cursor: pointer;
 	color: #fff;
+}
+
+/*pick pages*/
+
+.nav-tabs-admin-divus-dark.nav-tabs { }
+
+.nav-tabs-admin-divus-dark.nav-tabs > li > a { color: #1B1F24; }
+
+.nav-tabs-admin-divus-dark.nav-tabs > li > a:hover {
+	background-color: #323a45;
+	color: #fff;
+	border-bottom: 1px solid #323a45;
+}
+.nav-tabs-admin-divus-dark.nav-tabs > li.active > a, .nav-tabs-admin-divus-dark.nav-tabs > li.active > a:hover, .nav-tabs-admin-divus-dark.nav-tabs > li.active > a:focus {
+	background-color: #323a45;
+	color: #fff;
+}
+.tab-pane-admin-divus-dark h3 { color: #323a45; }
+
+.tab-content .tab-pane {
+	height: 137px;
+	margin-top: 10px;
+	overflow-y: scroll;
+}
+
+.btn-admin-divus-dark { background-color: #323a45; }
+.btn-admin-divus-dark { color: #fff;}
+.btn-admin-divus-dark:hover { 
+	color: #fff;
+	opacity: 0.8;
+}
+
+.button-for-add-pages {
+	margin-top: 10px;
+}
+
+.button-for-add-pages a {
+	text-align: left;
+	padding: 5px;
+}
+.button-for-add-pages a i {
+	float: right;
+	line-height: 22px;
+}
+
+
+/*add page*/
+
+.note-editor {
+	margin: 10px 0;
+}
+
+/*inbox page*/
+
+.mail-container .panel-heading {
+	padding: 15px 8px;
+}
+
+.mail-container .panel-body {
+	padding: 0;
+}
+
+.mail-container .table {
+	margin: 0;
+}
+
+.mail-unread {
+	font-weight: bold;
+}
+
+.mail-container .fa-star {
+	color: #ccc;
+}
+
+.mail-container .fa-star.text-danger {
+	color: #b94a48;
+}
+.inbox-category li.list-group-item {
+	border: none;
+	background-color: transparent;
+	border-left: 5px solid transparent;
+
+	color: #323a45;
+}
+
+.inbox-category li.active {
+	background-color: transparent;
+	border-radius: 0;
+	border-color: transparent;
+	border: none;
+	border-left: 5px solid #323a45;
+	background-color: #ccc;
+}
+
+.inbox-category li.list-group-item:hover {
+	border-left: 5px solid #323a45;
+	background: transparent;
+	background-color: #ccc;
+}
+
+.inbox-category li.list-group-item a,
+.inbox-category li.list-group-item:hover a {
+	text-decoration: none;
+	color: #323a45;
+}
+
+.compose-mail-container .form-horizontal .form-group {
+	line-height: 34px;
 }
