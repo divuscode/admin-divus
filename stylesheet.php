@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="css/divus-shortcodes.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
-
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.min.css" />
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.min.css" />
+<link rel="stylesheet" href="css/summernote.css">
 <link rel="stylesheet" href="css/slider.css">
 <link rel="stylesheet" href="css/sidebar.css">
 <link rel="stylesheet" href="css/gallery.css">
