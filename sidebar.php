@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="gallery.html" class="sidebar-link"> 
+                    <a href="gallery.php" class="sidebar-link"> 
                         <i class="fa fa-picture-o"></i>
                         <span>Gallery</span>
                     </a>
