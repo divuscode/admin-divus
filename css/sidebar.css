@@ -186,6 +186,10 @@
   display: none;
 }
 
+.submenu .badge {
+  text-indent: 0;
+}
+
 /*sidebar arrow*/
 
 .toggle-sidebar i {
