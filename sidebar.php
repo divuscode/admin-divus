@@ -33,8 +33,24 @@
                         <i class="fa fa-plus"></i>
                     </a>
                     <ul class="submenu">
-                        <li><a href="all-pages">All pages</a></li>
-                        <li><a href="add-page.html">Add page</a></li>
+                        <li><a href="all-pages.php">All pages</a></li>
+                        <li><a href="add-page.php">Add page</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link sidebar-dropdown">
+                        <i class="fa fa-envelope-o"></i>
+                        <span>Messages</span>
+                        <i class="fa fa-plus"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="inbox.php">
+                                <span>Inbox</span>
+                                <i class="badge badge-danger">4</i>
+                            </a>
+                        </li>
+                        <li><a href="write-message.php">Compose</a></li>
                     </ul>
                 </li>
                 <li>
