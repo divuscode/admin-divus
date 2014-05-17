@@ -201,3 +201,70 @@
 .compose-mail-container .form-horizontal .form-group {
 	line-height: 34px;
 }
+
+/*gallery*/
+
+.item { width: 25%; }
+.item.w2 { width: 50%; }
+
+.item img {
+	width: 100%;
+  	border: 2px solid #333;
+  	border-color: hsla(0, 0%, 0%, 0.5);
+}
+
+.masonry {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.masonry .item {
+  width:  140px;
+  height: 140px;
+  float: left;
+  padding: 5px;
+  overflow: hidden;
+  background-color: #323a45;
+}
+
+.item.w2 { width:  140px; }
+.item.w3 { width:  140px; }
+.item.w4 { width:  140px; }
+
+.item.h2 { height: 140px; }
+.item.h3 { height: 140px; }
+.item.h4 { height: 140px; }
+
+.gallery-hover {
+	position: absolute;
+	opacity: 0;
+	background-color: #eee;
+	width: 130px;
+	height: 130px;
+	text-align: center;
+	padding: 10px;
+
+	-webkit-transition: opacity 0.4s;
+	-moz-transition: opacity 0.4s;
+	-ms-transition: opacity 0.4s;
+	-o-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+}
+
+.item:hover .gallery-hover {
+	opacity: 1;
+}
+
+.gallery-hover a {
+	position: relative;
+	top: 50px;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.gallery-hover a i {
+	font-size: 22px;
+	color: #323a45;
+}
